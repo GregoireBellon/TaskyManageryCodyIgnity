@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-<<<<<<< HEAD
-  <component name="PublishConfigData">
+  <component name="PublishConfigData" serverName="Le Poto Greg">
     <serverData>
+      <paths name="Le Poto Greg">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="Serveur Greg">
         <serverdata>
           <mappings>
@@ -14,21 +20,9 @@
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
-=======
-  <component name="PublishConfigData" autoUpload="Always" serverName="Le Poto Greg">
-    <serverData>
-      <paths name="Le Poto Greg">
-        <serverdata>
-          <mappings>
-            <mapping deploy="/" local="$PROJECT_DIR$" web="/CodyIgnity" />
->>>>>>> f3a63b121b6c6cd2fd4f09ade6abcf49faa1ca03
           </mappings>
         </serverdata>
       </paths>
     </serverData>
-<<<<<<< HEAD
-=======
-    <option name="myAutoUpload" value="ALWAYS" />
->>>>>>> f3a63b121b6c6cd2fd4f09ade6abcf49faa1ca03
   </component>
 </project>
