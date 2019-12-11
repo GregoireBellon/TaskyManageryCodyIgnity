@@ -1,16 +1,11 @@
 <?php
 
-	class Liste extends CI_Controller{
+	class Listes extends CI_Controller {
 
-		public function index(){
-			$data=array(
-				'id' => 1
-			);
+		public function show(){
+			$this->load->model('Listes_model');
+			$data= $this->Listes_model->getListes(1);
 			$this->load->view('pageListes', $data);
-		}
-
-		public function show ($id){
-
 		}
 	}
 
