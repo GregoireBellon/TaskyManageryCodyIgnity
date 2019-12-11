@@ -3,7 +3,7 @@
   <component name="WebServers">
     <option name="servers">
       <webServer id="5bf01557-3e07-41da-b153-68f4c8f9feed" name="Le Poto Greg" url="http://51.91.122.109">
-        <fileTransfer host="51.91.122.109" port="22" rootFolder="/var/www/html/CodyIgnity/TaskyManageryCodyIgnity" accessType="SFTP">
+        <fileTransfer host="51.91.122.109" port="22" rootFolder="/var/www/html/CodyIgnity/" accessType="SFTP">
           <advancedOptions>
             <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
           </advancedOptions>

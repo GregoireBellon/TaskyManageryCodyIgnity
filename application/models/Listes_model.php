@@ -9,7 +9,7 @@ class Listes_model extends CI_Model
 	}
 
 	public function getListes($id){
-		$requete = $this->db->get_where("Listes", array('id_liste'=>$id));
+		$requete = $this->db->get_where("Liste", array('id_liste'=>$id));
 		return $requete->row_array();
 	}
 }
