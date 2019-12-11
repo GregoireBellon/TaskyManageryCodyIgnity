@@ -76,15 +76,10 @@ $query_builder = TRUE;
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
-<<<<<<< HEAD
 	'username' => 'simpleb0t',
 	'password' => 'S1Mpl€bOOt',
 	'database' => 'TP6',
-=======
-	'username' => 'webadmin',
-	'password' => 'WynoVe1940+J',
-	'database' => 'TD_GROUPE_PHP',
->>>>>>> 814ab88b0d478e17cd254345a992e3cb37bbf1cd
+
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
