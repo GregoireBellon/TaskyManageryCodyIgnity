@@ -1,7 +1,7 @@
 <?php
 
 
-class Users_model
+class Users_model extends CI_Model
 {
 	public function __construct()
 	{
@@ -12,7 +12,7 @@ class Users_model
 	{
 		if($id !=FALSE)
 		{
-			$query = $this->db->get_where('Utilisateur', array('id'=> $id));
+			$query = $this->db->get_where('Utilisateur', array('id_user'=> $id));
 			return $query->row_array();
 		}
 		else
