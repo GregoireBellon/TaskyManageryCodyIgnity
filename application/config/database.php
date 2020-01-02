@@ -78,7 +78,12 @@ $db['default'] = array(
 	'hostname' => 'localhost',
 	'username' => 'simpleb0t',
 	'password' => 'S1Mpl€bOOt',
+<<<<<<< HEAD
+	'database' => 'TP6',
+
+=======
 	'database' => 'TD_GROUPE_PHP',
+>>>>>>> 8b4149a65ee91bcb7cfd6a0ba87f418cd4f1ffca
 	'dbdriver' => 'mysqli',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
