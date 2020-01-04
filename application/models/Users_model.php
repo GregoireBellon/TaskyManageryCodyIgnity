@@ -21,17 +21,31 @@ class Users_model extends CI_Model
 		}
 	}
 
+	/*	public function getUserId($login)
+		{
+			if($login !=FALSE)
+			{
+				$query = $this->db->get_where('Utilisateur', array('nom_user'=> $login));
+				return $query->row_array();
+			}
+			else
+			{
+				return false;
+			}
+		}*/
+
 	public function verif_connex($username,$pwd)
 	{
 		if($username!=FALSE)
 		{
-				$query = $this->db->get_where('Utilisateur', array('nom_user'=>$username));
-				if($query->row_array()['mdp_user']===$pwd)
-				{
-					return true;
-				}
+			$query = $this->db->get_where('Utilisateur', array('nom_user'=>$username));
+			$result = $query->row_array();
+			if($result['mdp_user']===$pwd)
+			{
+				return true;
+			}
 		}
-		else return false;
+		return false;
 	}
 
 
