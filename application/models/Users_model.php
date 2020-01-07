@@ -21,7 +21,7 @@ class Users_model extends CI_Model
 		}
 	}
 
-	/*	public function getUserId($login)
+		public function getUserId($login)
 		{
 			if($login !=FALSE)
 			{
@@ -32,7 +32,7 @@ class Users_model extends CI_Model
 			{
 				return false;
 			}
-		}*/
+		}
 
 	public function verif_connex($username,$pwd)
 	{

@@ -24,7 +24,7 @@ class Users extends CI_Controller
 	public function redirectLoginPage()
 	{
 
-		//si clic sur bouton de connexion, alors vérification des variables login et password
+		//si clic sur bouton de connexion, alors vérification du remplissage des variables login et password
 		if(isset($_POST['connecbutton']))
 		{
 			//echo 'clic sur bouton connexion';
@@ -64,17 +64,25 @@ class Users extends CI_Controller
 		$this->load->model('users_model');
 		$connexionTrue = $this->users_model->verif_connex($login,$pwd);
 		//prévoir d'envoyer l'id de l'utilisateur pour pouvoir afficher ses listes
-		$_COOKIE['login']= $login;
+
 		if($connexionTrue)
 		{
-			$_SESSION['login']=$_COOKIE['login'];
+			//on place le login dans la variable session pour pouvoir l'utiliser ensuite
+			$_SESSION['login']=$login;
 			//echo 'connexion réussie';
-			header("Location : http://51.91.122.109/CodyIgnity/index.php/listes/show/".$_SESSION['login']."");//echo 'connexion échouée';
-			//$this->load->view('pageListes');
+			//header("Location : http://51.91.122.109/CodyIgnity/index.php/listes/show/".$_SESSION['login']);
+			//echo 'connexion réussie'
+
 		}
 		else {
-			header("Location : http://51.91.122.109/CodyIgnity/index.php/listes/show");//echo 'connexion échouée';
-			$this->load->view('login');
+			//affichage erreurs ! à garder !
+			error_reporting(E_ALL | E_WARNING | E_NOTICE);
+			ini_set('display_errors', TRUE);
+
+
+			flush();
+			header("Location : http://51.91.122.109/CodyIgnity/index.php");
+			//echo 'connexion échouée';
 		}
 
 	}

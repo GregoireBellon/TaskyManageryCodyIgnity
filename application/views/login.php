@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div > <h1 >TaskManager</h1> </div>
-<form method="post" action="index.php/users/redirectLoginPage">
+<form method="post" action="users/redirectLoginPage">
 	<div>
 		<input id="login" name="login"  placeholder="Username"/>
 	</div>

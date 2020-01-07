@@ -2,9 +2,12 @@
 
 	class Listes extends CI_Controller {
 
-		public function show($id){
+		public function show(){ // rajouter $id si besoin en param
 			$this->load->model('Listes_model');
-			$data= $this->Listes_model->get_listes($id);
+			//$data= $this->Listes_model->get_listes($id);
+			$this->load->model('Users_model');
+			$id_user = $this->Users_model->getUserId($_SESSION['login']);
+			$data= $this->Listes_model->get_listes($id_user);
 			$data["msg_err"] = "Il n'y a aucune liste pour cet id";
 			$this->load->view('pageListes', $data);
 		}
