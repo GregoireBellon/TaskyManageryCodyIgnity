@@ -12,8 +12,8 @@ class Users_model extends CI_Model
 	{
 		if($id !=FALSE)
 		{
-			$query = $this->db->get_where('Utilisateur', array('id_user'=> $id));
-			return $query->row_array();
+			$query = $this->db->get_where('Utilisateur', array('id_user'=> $id))->row_array();
+			return $query['nom_user'];
 		}
 		else
 		{
@@ -26,7 +26,8 @@ class Users_model extends CI_Model
 			if($login !=FALSE)
 			{
 				$query = $this->db->get_where('Utilisateur', array('nom_user'=> $login));
-				return $query->row_array();
+				$stmt = $query->row_array();
+				return $stmt['id_user'];
 			}
 			else
 			{

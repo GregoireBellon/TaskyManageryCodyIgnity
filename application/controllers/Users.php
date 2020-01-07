@@ -1,6 +1,4 @@
 <?php
-
-
 class Users extends CI_Controller
 {
 	//aficher nom d'un utilisateur
