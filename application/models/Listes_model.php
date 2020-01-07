@@ -10,7 +10,6 @@ class Listes_model extends CI_Model
 
 	public function get_listes($id){
 
-		
 		$this->db->select('nom_liste');
 		$this->db->from('Liste');
 		$this->db->join('Privileges', 'Liste.id_liste = Privileges.id_liste');
